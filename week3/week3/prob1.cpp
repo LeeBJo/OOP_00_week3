@@ -7,7 +7,7 @@ public:
 	int getY();
 	void setX(int x);
 	void setY(int y);
-	void printXY(int x, inty);
+	void printXY(int x, int y);
 };
 
 int setValue::getX() {
