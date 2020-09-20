@@ -7,6 +7,7 @@ public:
 	int getY();
 	void setX(int x);
 	void setY(int y);
+	void printXY(int x, inty);
 };
 
 int setValue::getX() {
@@ -25,12 +26,16 @@ void setValue::setY(int input) {
 	y = input;
 }
 
+void setValue::printXY(int x, int y) {
+	std::cout << "X = " << x << " , Y =" << y << std::endl;
+}
+
 int main(void) {
 	setValue obj;
 	obj.setX(33);
 	obj.setY(44);
 
-	std::cout << "X = " << obj.getX() << " , Y =" << obj.getY() << std::endl;
+	obj.printXY(obj.getX, obj.getY);
 	system("pause");
 	return 0;
 }
